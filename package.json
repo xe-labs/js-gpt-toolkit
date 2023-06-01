@@ -1,0 +1,66 @@
+{
+  "name": "js-gpt-toolkit",
+  "version": "0.0.1",
+  "description": "A comprehensive suite of tools leveraging GPT technology, crafted to enhance and streamline front-end JavaScript development workflows.",
+  "main": "./src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "pre-commit": "lint-staged",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --ext .js,.jsx . --fix",
+    "start:codenavgpt": "node src/code-nav-gpt/index.js",
+    "start:docugpt": "node src/docu-gpt/index.js",
+    "start:commitgpt": "node src/commit-gpt/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xe-labs/js-gpt-toolkit.git"
+  },
+  "keywords": [
+    "AI",
+    "langchain",
+    "gpt",
+    "dev workflow"
+  ],
+  "author": "@gautam-in",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xe-labs/js-gpt-toolkit/issues"
+  },
+  "homepage": "https://github.com/xe-labs/js-gpt-toolkit#readme",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "2.8.8"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "eslint --ext .js,.jsx . --fix",
+      "prettier --write --ignore-unknown",
+      "git add ."
+    ]
+  },
+  "dependencies": {
+    "center-align": "^1.0.1",
+    "cfonts": "^3.2.0",
+    "chalk": "^5.2.0",
+    "dotenv": "^16.1.3",
+    "enquirer": "^2.3.6",
+    "langchain": "^0.0.86",
+    "node-emoji": "^2.0.2",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^9.0.0"
+  }
+}
