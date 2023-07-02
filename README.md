@@ -34,6 +34,38 @@ To start the CommitGPT run following command:
 npm run start:commitgpt
 ```
 
+JS-GPT-Toolkit can also be installed globally. Clone the repository and run the following command:
+
+```
+npm i -g .
+```
+
+Now codenavgpt, docugpt and commitgpt can be accessed globally within local machine. 
+
+Add the openai api key to your current terminal using the following command:
+
+```
+export OPENAI_API_KEY="<YOUR API KEY HERE>"
+```
+
+To start codenavgpt, type the following command:
+
+```
+codenavgpt
+```
+
+To start docugpt, type the following command:
+
+```
+docugpt
+```
+
+To start commitgpt, type the following command:
+
+```
+commitgpt
+```
+
 ### License
 
 JS-GPT-TOOLKIT is [MIT licensed](./LICENSE).

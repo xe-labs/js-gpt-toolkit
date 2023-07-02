@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import dotenv from 'dotenv';
 import enquirer from 'enquirer';
 import { initializeAndGetChain } from './initializeAndGetChain.js';

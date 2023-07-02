@@ -7,6 +7,11 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "bin": {
+    "codenavgpt": "./src/code-nav-gpt/index.js",
+    "commitgpt": "./src/commit-gpt/index.js",
+    "docugpt": "./src/docu-gpt/index.js"
+  },
   "scripts": {
     "pre-commit": "lint-staged",
     "lint": "eslint --ext .js,.jsx .",
