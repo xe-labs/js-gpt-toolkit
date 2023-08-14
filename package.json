@@ -58,7 +58,7 @@
     "chalk": "^5.2.0",
     "dotenv": "^16.1.3",
     "enquirer": "^2.3.6",
-    "langchain": "^0.0.86",
+    "langchain": "^0.0.127",
     "node-emoji": "^2.0.2",
     "pdf-parse": "^1.1.1",
     "uuid": "^9.0.0"
